@@ -20,8 +20,8 @@ const toggleUserState = (allUsers, userName) => {
     return Promise.all(users);
   }
 
-const logger = updatedUsers => console.table(updatedUsers);
+const logger_ = updatedUsers => console.table(updatedUsers);
 
-toggleUserState(users, 'Mango').then(logger);
-toggleUserState(users, 'Lux').then(logger);
+toggleUserState(users, 'Mango').then(logger_);
+toggleUserState(users, 'Lux').then(logger_);
 
